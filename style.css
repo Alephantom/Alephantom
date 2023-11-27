@@ -1,0 +1,90 @@
+/* Body */
+body {
+  background-color: beige;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  position:absolute;
+  top: 70px;
+}
+
+
+/* Navigation bar */
+nav {
+  background-color: darkgreen;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  position: fixed;
+  height: 70px;
+}
+
+/* Navigation bar buttons */
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Styling for the buttons */
+nav li a {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover effect for the buttons */
+nav li a:hover {
+  background-color: lightgreen;
+}
+
+/* Header */
+
+header {
+  background-color: rgb(172, 166, 92);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: static;
+  width: 100%;
+  z-index: 5;
+  top: 70px;/* Adjust the top value to leave space for the navigation bar */
+} 
+
+header p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 100px;
+  word-spacing: 2;
+}
+
+/* Main section */
+main {
+  margin-top: 200px; /* Adjust the value based on the height of the header and additional spacing */
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+/* Back button */
+#back_btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%; /* Add round frame */
+  transition: transform 0.5s; /* Add transition for shake effect */
+}
+
+#back_btn:hover {
+  background-color: orange; /* Change background color to orange on hover */
+  transform: rotate(5deg) scale(1.1); /* Apply shake effect on hover */
+}
